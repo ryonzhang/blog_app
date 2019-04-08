@@ -1,0 +1,6 @@
+- id: "tag.created.success"
+  translation: "Tag was successfully created."
+- id: "tag.updated.success"
+  translation: "Tag was successfully updated."
+- id: "tag.destroyed.success"
+  translation: "Tag was successfully destroyed."

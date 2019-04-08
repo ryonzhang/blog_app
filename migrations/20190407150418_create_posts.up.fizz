@@ -1,0 +1,8 @@
+create_table("posts") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("title", "string", {})
+	t.Column("content", "string", {})
+	t.Column("tags", "string", {})
+	t.Column("status", "string", {})
+	t.Column("author_id", "uuid", {})
+}
