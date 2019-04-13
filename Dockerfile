@@ -7,8 +7,7 @@ WORKDIR $GOPATH/src/github.com/ryonzhang369/blog_app
 
 # this will cache the npm install step, unless package.json changes
 ADD package.json .
-ADD yarn.lock .
-RUN yarn install --no-progress
+RUN npm install
 ADD . .
 RUN go get $(go list ./... | grep -v /vendor/)
 RUN buffalo build --static -o /bin/app
